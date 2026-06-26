@@ -6,6 +6,8 @@
      <title>Document</title>
 </head>
 <style>
+
+
      *{
           color: white;
           background-color: black;
@@ -17,39 +19,82 @@
      body{
           height: 100vh;
      }
+
+
      header{
           background-color: blue;
           text-align: center;
 
-          height: 15%;
+          min-height: 15%;
      }
      main{
           background-color: blueviolet;
           text-align: center;
 
-          height: 70%;
+          min-height: 70%;
      }
      footer{
           background-color: red;
           text-align: center;
 
-          height: 15%;
+          min-height: 15%;
      }
-     p{
+
+
+     header p{
+          background-color: blue;
+     }
+     main p{
           background-color: blueviolet;
      }
+     footer p{
+          background-color: red;
+     }
+
+
+     header h1{
+          background-color: rgb(126, 119, 255);
+     }
+     main h1{
+          background-color: rgb(197, 121, 255);
+     }
+     footer h1{
+          background-color: rgb(255, 105, 112);
+     }
+
+
+     h1{
+          border: 0.125rem solid greenyellow;
+     }
+
+     header, footer, main{
+          border: 0.125rem solid rgb(204, 255, 0);
+          padding: 0.25rem;
+     }
+
+     p{
+          padding: 1rem;
+     }
+
+     img{
+          max-width: 100%;
+     }
+
 </style>
 <body>
      <header>
-          Header
+          <h1>Header</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestias blanditiis, inventore ipsam earum mollitia ullam necessitatibus neque repellendus voluptatum sint, itaque quam aliquam ut minima, odio officia nihil dolorem?</p>
      </header>
      <main>
-          Main
+          <h1>Main</h1>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis est placeat corporis, deleniti fugit aut! Incidunt cumque inventore ab eveniet error sunt voluptatibus molestiae cupiditate explicabo, eum totam deserunt animi obcaecati! Non vitae repudiandae ullam, incidunt saepe sunt est ad tempora consectetur numquam porro officiis cumque adipisci? Dolores, maiores quaerat.</p>
+          <img src="images/demo.jpg" alt="Demo Image">
      </main>
      <footer>
-          Footer
+          <h1>Footer</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat quam amet ipsa facilis autem, nobis animi deserunt natus accusantium commodi molestiae provident quod corrupti eum dolor beatae maxime sit?</p>
      </footer>
 </body>
 </html>
