@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<style>
+     body{
+          background-color: aliceblue;
+     }
+
+     form{
+          display: flex;
+          justify-content: center;
+     }
+     table{
+          width: 30%;
+          border: 0.001rem solid gray;
+          background-color: white;
+     }
+     tr{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+     td{
+          padding: 0.5rem;
+          display: flex;
+     }
+     input{
+          padding: 0.25rem;
+     }
+     label{
+          font-weight: bolder;
+     }
+
+     #submit{
+          background-color: rgb(156, 255, 42);
+          padding: 0.5rem;
+          border-radius: 7px;
+          font-weight: bold;
+          width: 10rem;
+
+          border: 0.001rem solid gray;
+     }
+     #clear{
+          background-color: red;
+          padding: 0.5rem;
+          border-radius: 7px;
+          color: white;
+          font-weight: 900;
+          width: 7rem;
+
+          border: 0.1rem solid gray;
+     }
+
+</style>
+
+<body>
+     <form action="">
+          <table>
+               <tr>
+                    <td>
+                         <label for="userName">Username: </label>
+                    </td>
+                    <td>
+                         <input type="text" name="userName" id="userName" placeholder="Enter your Name" required>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label>Gender: </label>
+                    </td>
+                    <td>
+                         <input type="radio" name="selectGender" id="Male" value="Male"  required>
+                              <label for="Male">
+                                   Male
+                              </label>
+                         <input type="radio" name="selectGender" id="Female" value="Female"  required>
+                              <label for="Female">
+                                   Female
+                              </label>
+                        <input type="radio" name="selectGender" id="Other" value="Other"  required>
+                              <label for="Other">
+                                   Other
+                              </label>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="userAge">Age: </label>
+                    </td>
+                    <td>
+                         <input type="number" name="age" id="userAge" placeholder="Enter your Age" required>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="userContact">Phone: </label>
+                    </td>
+                    <td>
+                         <input type="tel" name="userContact" id="userContact" placeholder="Enter Phone Number" required>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="course">Course: </label>
+                    </td>
+                    <td>
+                         <select name="course" id="course" required>
+                              <option disabled selected>--Select Options--</option>
+                              <option value="BCA">BCA</option>
+                              <option value="BTech">BTech</option>
+                              <option value="MCA">MCA</option>
+                              <option value="MTech">MTech</option>
+                              <option value="BSc_CS">BSc CS</option>
+                              <option value="MSc_CS">MSc CS</option>
+                         </select>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="collegeName">College: </label>
+                    </td>
+                    <td>
+                         <input type="text" for="collegeName" id="collegeName" placeholder="Enter Name of your College" required>
+                    </td>
+               </tr>
+               <tr>
+                    <td colspan="2">
+                         <button type="submit" id="submit">Submit</button>
+                    </td>
+               </tr>
+               <tr>
+                    <td colspan="2">
+                         <button type="reset" id="clear">Clear</button>
+                    </td>
+               </tr>
+          </table>
+     </form>
+</body>
+</html>
